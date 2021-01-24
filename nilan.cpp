@@ -1,5 +1,5 @@
-//#include "nilan.h"
-//#include "esphome/core/log.h"
+#include "nilan.h"
+#include "esphome/core/log.h"
 
 namespace esphome {
 namespace nilan {
