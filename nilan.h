@@ -1,8 +1,8 @@
 #pragma once
 
-//#include "esphome/core/component.h"
-//#include "esphome/components/sensor/sensor.h"
-//#include "esphome/components/modbus/modbus.h"
+#include "esphome/core/component.h"
+#include "esphome/components/sensor/sensor.h"
+#include "esphome/components/modbus/modbus.h"
 #include "esphome.h"
 
 namespace esphome {
