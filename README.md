@@ -1,10 +1,10 @@
-Peacefair PZEM-004T V3 Energy Monitor
+NILAN Ventilation Modbus Communication
 =====================================
 
 .. seo::
-    :description: Instructions for setting up PZEM-004T power monitors.
-    :image: pzemac.png
-    :keywords: PZEM-004T V3
+    :description: Instructions for setting up NILAN Modbus.
+    :image: nilan.png
+    :keywords: NILAN Ventilation
 
 .. note::
 
@@ -14,12 +14,7 @@ Peacefair PZEM-004T V3 Energy Monitor
       - An image for the front page.
       - Images/screenshots/example configs of this device being used in action.
 
-The ``NILAN`` sensor platform allows you to use NILAN
-(`website <https://innovatorsguru.com/pzem-004t-v3/>`__,
-`datasheet <https://innovatorsguru.com/wp-content/uploads/2019/06/PZEM-004T-V3.0-Datasheet-User-Manual.pdf>`__)
-with ESPHome.
-
-The sensor can be connected in various configurations - please see the `manufacturer's website <https://innovatorsguru.com/pzem-004t-v3/>`__
+The sensor can be connected in various configurations - please see the `manufacturer's website <https://en.nilan.dk/en-gb/frontpage/download>`__
 for more information.
 
 .. warning::
@@ -57,28 +52,9 @@ to some pins on your board and the baud rate set to 9600.
 Configuration variables:
 ------------------------
 
-- **current** (*Optional*): Use the current value of the sensor in amperes. All options from
-  :ref:`Sensor <config-sensor>`.
-- **energy** (*Optional*): Use the (active) energy value of the sensor in watt*hours. All options from
-  :ref:`Sensor <config-sensor>`.
-- **power** (*Optional*): Use the (active) power value of the sensor in watts. All options from
-  :ref:`Sensor <config-sensor>`.
-- **voltage** (*Optional*): Use the voltage value of the sensor in volts.
-  All options from :ref:`Sensor <config-sensor>`.
-- **frequency** (*Optional*): Use the frequency value of the sensor in hertz.
-  All options from :ref:`Sensor <config-sensor>`.
-- **power_factor** (*Optional*): Use the power factor value of the sensor.
-  All options from :ref:`Sensor <config-sensor>`.
+
 - **update_interval** (*Optional*, :ref:`config-time`): The interval to check the
   sensor. Defaults to ``60s``.
 - **address** (*Optional*, int): The address of the sensor if multiple sensors are attached to
   the same UART bus. You will need to set the address of each device manually. Defaults to ``1``.
 
-See Also
---------
-
-- :ref:`sensor-filters`
-- :doc:`pzem004t`
-- :doc:`pzemdc`
-- :apiref:`pzemac/pzemac.h`
-- :ghedit:`Edit`
