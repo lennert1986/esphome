@@ -14,7 +14,7 @@ Peacefair PZEM-004T V3 Energy Monitor
       - An image for the front page.
       - Images/screenshots/example configs of this device being used in action.
 
-The ``pzemac`` sensor platform allows you to use PZEM-004T V3 energy monitors
+The ``NILAN`` sensor platform allows you to use NILAN
 (`website <https://innovatorsguru.com/pzem-004t-v3/>`__,
 `datasheet <https://innovatorsguru.com/wp-content/uploads/2019/06/PZEM-004T-V3.0-Datasheet-User-Manual.pdf>`__)
 with ESPHome.
@@ -24,8 +24,7 @@ for more information.
 
 .. warning::
 
-    This page refers to version V3 of the PZEM004T.
-    For using the older V1 variant of this sensor please see :doc:`pzem004t <pzem004t>`.
+    This is only working for NILAN Light models.
 
 The communication with this integration is done over a :ref:`UART bus <uart>`.
 You must therefore have a ``uart:`` entry in your configuration with both the TX and RX pins set
@@ -40,7 +39,7 @@ to some pins on your board and the baud rate set to 9600.
       baud_rate: 9600
 
     sensor:
-      - platform: pzemac
+      - platform: nilan  //testnilan
         current:
           name: "PZEM-004T V3 Current"
         voltage:
