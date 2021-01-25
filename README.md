@@ -35,18 +35,8 @@ to some pins on your board and the baud rate set to 9600.
 
     sensor:
       - platform: nilan  //testnilan
-        current:
-          name: "PZEM-004T V3 Current"
-        voltage:
-          name: "PZEM-004T V3 Voltage"
-        energy:
-          name: "PZEM-004T V3 Energy"
-        power:
-          name: "PZEM-004T V3 Power"
-        frequency:
-          name: "PZEM-004T V3 Frequency"
-        power_factor:
-          name: "PZEM-004T V3 Power Factor"
+        filterdays:
+          name: "Time for filter change"
         update_interval: 60s
 
 Configuration variables:
