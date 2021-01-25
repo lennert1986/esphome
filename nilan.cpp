@@ -6,8 +6,8 @@ namespace nilan {
 
 static const char *TAG = "nilan";
 
-static const uint8_t 04_READ_INPUT_REGISTERS = 0x04;
-static const uint8_t 03_READ_HOLDING_REGISTERS = 0x03;
+static const uint8_t READ_INPUT_REGISTERS = 0x04;
+static const uint8_t READ_HOLDING_REGISTERS = 0x03;
 static const uint8_t nilan_REGISTER_COUNT = 10;  // 10x 16-bit registers
 
 void NILAN::on_modbus_data(const std::vector<uint8_t> &data) {
@@ -293,8 +293,8 @@ void NILAN::on_modbus_data(const std::vector<uint8_t> &data) {
     this->AirTemp_TempControl_sensor_->publish_state(AirTemp_TempControl);
 }
 
-void NILAN::update() { this->send(04_READ_INPUT_REGISTERS, 0, nilan_REGISTER_COUNT);
-                        this->send(03_READ_HOLDING_REGISTERS, 0, nilan_REGISTER_COUNT); }
+void NILAN::update() { this->send(READ_INPUT_REGISTERS, 0, nilan_REGISTER_COUNT);
+                        this->send(READ_HOLDING_REGISTERS, 0, nilan_REGISTER_COUNT); }
 void NILAN::dump_config() {
   ESP_LOGCONFIG(TAG, "NILAN:");
   ESP_LOGCONFIG(TAG, "  Address: 0x%02X", this->address_);
