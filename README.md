@@ -46,5 +46,5 @@ Configuration variables:
 - **update_interval** (*Optional*, :ref:`config-time`): The interval to check the
   sensor. Defaults to ``60s``.
 - **address** (*Optional*, int): The address of the sensor if multiple sensors are attached to
-  the same UART bus. You will need to set the address of each device manually. Defaults to ``1``.
+  the same UART bus. You will need to set the address of each device manually. Defaults to ``30``.
 
